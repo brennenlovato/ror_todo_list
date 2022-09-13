@@ -1,7 +1,12 @@
+import HomeHeader from "./HomeHeader";
+import Features from "./Features";
+import Price from "./Price";
 
 const Home = () => (
   <>
-    <h1>Home Todo List</h1>
+    <HomeHeader />
+    <Features />
+    <Price />
   </>
 )
 
