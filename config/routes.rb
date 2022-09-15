@@ -5,6 +5,10 @@ Rails.application.routes.draw do
       resources :todos
     end
     
+    resources :todos, except: [:index, :show, :create, :update, :destroy] do
+      resources :notes 
+    end
+
   end
 
 end
